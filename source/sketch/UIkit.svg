@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="802px" height="443px" viewBox="0 0 802 443" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>UIkit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UIkit" transform="translate(-112.000000, -72.000000)">
+            <g transform="translate(112.000000, 72.000000)">
+                <g id="Dropdown" transform="translate(619.000000, 250.000000)">
+                    <rect id="Rectangle-22" fill="#FFFFFF" filter="url(#filter-1)" x="1" y="6.39423077" width="180" height="183.605769" rx="3"></rect>
+                    <path d="M148.839196,3.55271368e-15 L155.874372,6.39423077 L162.909548,3.55271368e-15 L148.839196,3.55271368e-15 Z" id="Arrow" fill="#FFFFFF" transform="translate(155.874372, 3.197115) rotate(180.000000) translate(-155.874372, -3.197115) "></path>
+                    <rect id="Rectangle-40" fill="#F2F2F6" x="1" y="6" width="180" height="37"></rect>
+                    <text id="Account" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#52575B">
+                        <tspan x="21" y="29">Account</tspan>
+                    </text>
+                    <text id="Activity" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                        <tspan x="21" y="65">Activity</tspan>
+                    </text>
+                    <text id="Settings" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                        <tspan x="21" y="101">Settings</tspan>
+                    </text>
+                    <text id="My-profile-Copy" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                        <tspan x="21" y="137">My profile</tspan>
+                    </text>
+                    <text id="Logout" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                        <tspan x="21" y="174">Logout</tspan>
+                    </text>
+                    <path d="M0.5,79.5 L180.5,79.5" id="Line" stroke="#F2F2F6" stroke-linecap="square"></path>
+                    <path d="M0.5,113.5 L180.5,113.5" id="Line-Copy" stroke="#F2F2F6" stroke-linecap="square"></path>
+                    <path d="M0.5,152.5 L180.5,152.5" id="Line-Copy-2" stroke="#F2F2F6" stroke-linecap="square"></path>
+                </g>
+                <g id="Navbar" transform="translate(0.000000, 56.000000)">
+                    <g id="Secondary" transform="translate(0.000000, 90.000000)">
+                        <rect id="Rectangle-1" fill="#52565B" x="0" y="50" width="800" height="50" rx="3"></rect>
+                        <text id="UIkit" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="20" y="83">UIkit</tspan>
+                        </text>
+                        <g id="user" transform="translate(377.000000, 0.000000)">
+                            <path d="M0,0 L5,5 L10,0 L0,0 Z M194,28 L403,28 L403,78 L194,78 L194,28 Z" id="Arrow" fill="#E8EAED" transform="translate(201.500000, 39.000000) rotate(-180.000000) translate(-201.500000, -39.000000) "></path>
+                            <rect id="Frame" x="351" y="59" width="32" height="32" rx="3"></rect>
+                            <text id="nandomoreira.me" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="224.745117" y="80">nandomoreira.me</tspan>
+                            </text>
+                        </g>
+                        <g id="nav-items" transform="translate(90.000000, 50.000000)">
+                            <rect id="Active" fill-opacity="0.5" fill="#3E4245" x="0" y="0" width="89" height="50"></rect>
+                            <text id="Home" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#FFFFFF">
+                                <tspan x="27.6279297" y="30">Home</tspan>
+                            </text>
+                            <text id="About" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="116.55957" y="30">About</tspan>
+                            </text>
+                            <text id="Pricing" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="203.901367" y="30">Pricing</tspan>
+                            </text>
+                            <text id="Contact" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="299.760742" y="30">Contact</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Primary" transform="translate(0.000000, 70.000000)">
+                        <rect id="Rectangle-1" fill="#5484B3" x="0" y="0" width="800" height="50" rx="3"></rect>
+                        <text id="UIkit" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="20" y="33">UIkit</tspan>
+                        </text>
+                        <g id="user" transform="translate(601.000000, 9.000000)">
+                            <path d="M169,14 L174,19 L179,14 L169,14 Z" id="Arrow" fill="#E8EAED"></path>
+                            <rect id="Frame" x="127" y="0" width="32" height="32" rx="3"></rect>
+                            <text id="nandomoreira.me" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="0.745117188" y="21">nandomoreira.me</tspan>
+                            </text>
+                        </g>
+                        <g id="nav-items" transform="translate(90.000000, 0.000000)">
+                            <rect id="Active" fill-opacity="0.5" fill="#527AA0" x="0" y="0" width="89" height="50"></rect>
+                            <text id="Home" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#FFFFFF">
+                                <tspan x="27.6279297" y="30">Home</tspan>
+                            </text>
+                            <text id="About" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="116.55957" y="30">About</tspan>
+                            </text>
+                            <text id="Pricing" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="203.901367" y="30">Pricing</tspan>
+                            </text>
+                            <text id="Contact" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#E8EAED">
+                                <tspan x="299.760742" y="30">Contact</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Light">
+                        <rect id="Rectangle-1" fill="#FFFFFF" x="0" y="0" width="800" height="50" rx="3"></rect>
+                        <text id="UIkit" font-family="Roboto-Regular, Roboto" font-size="24" font-weight="normal" fill="#5484B3">
+                            <tspan x="20" y="33">UIkit</tspan>
+                        </text>
+                        <g id="user" transform="translate(601.000000, 9.000000)">
+                            <path d="M169,14 L174,19 L179,14 L169,14 Z" id="Arrow" fill="#999999"></path>
+                            <rect id="Frame" x="127" y="0" width="32" height="32" rx="3"></rect>
+                            <text id="nandomoreira.me" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                                <tspan x="0.745117188" y="21">nandomoreira.me</tspan>
+                            </text>
+                        </g>
+                        <g id="nav-items" transform="translate(90.000000, 0.000000)">
+                            <rect id="Active" fill="#F2F2F6" x="0" y="0" width="89" height="50"></rect>
+                            <text id="Home" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#52575B">
+                                <tspan x="27.6279297" y="31">Home</tspan>
+                            </text>
+                            <text id="About" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                                <tspan x="116.55957" y="31">About</tspan>
+                            </text>
+                            <text id="Pricing" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                                <tspan x="203.901367" y="31">Pricing</tspan>
+                            </text>
+                            <text id="Contact" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" line-spacing="17" fill="#71748D">
+                                <tspan x="299.760742" y="31">Contact</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Buttons" transform="translate(1.000000, 0.000000)">
+                    <g id="Primary">
+                        <rect id="Rectangle-10" fill="#5484B3" x="0" y="0" width="125" height="36" rx="3"></rect>
+                        <text id="Button-primary" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button primary</tspan>
+                        </text>
+                    </g>
+                    <g id="Secodary" transform="translate(135.000000, 0.000000)">
+                        <rect id="Rectangle-10-Copy" fill="#52575B" x="0" y="0" width="143" height="36" rx="3"></rect>
+                        <text id="Button-Secondary" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button Secondary</tspan>
+                        </text>
+                    </g>
+                    <g id="Success" transform="translate(288.000000, 0.000000)">
+                        <rect id="Rectangle-10-Copy" fill="#75CF4A" x="0" y="0" width="129" height="36" rx="3"></rect>
+                        <text id="Button-Success" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button Success</tspan>
+                        </text>
+                    </g>
+                    <g id="Info" transform="translate(427.000000, 0.000000)">
+                        <rect id="Rectangle-10-Copy" fill="#65C1DF" x="0" y="0" width="101" height="36" rx="3"></rect>
+                        <text id="Button-Info" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button Info</tspan>
+                        </text>
+                    </g>
+                    <g id="Warning" transform="translate(538.000000, 0.000000)">
+                        <rect id="Rectangle-10-Copy" fill="#FFBC5D" x="0" y="0" width="128" height="36" rx="3"></rect>
+                        <text id="Button-Warning" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button Warning</tspan>
+                        </text>
+                    </g>
+                    <g id="Danger" transform="translate(677.000000, 0.000000)">
+                        <rect id="Rectangle-10-Copy" fill="#FF3B47" x="0" y="0" width="122" height="36" rx="3"></rect>
+                        <text id="Button-Danger" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15" y="23">Button Danger</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
