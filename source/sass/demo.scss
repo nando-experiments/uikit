@@ -1,0 +1,17 @@
+
+@import "bourbon/bourbon"; // A simple and lightweight mixin library for Sass - http://bourbon.io/
+@import "neat/neat"; // A lightweight semantic grid framework for Sass and Bourbon - http://neat.bourbon.io/
+
+@import "settings/all";
+@import "tools/all";
+
+.header {
+  text-align: center;
+  padding: get-spacing(base) 0;
+  margin-bottom: get-spacing(base);
+  border-bottom: 1px solid get-color(border);
+
+  h1 {
+    font-size: get-font-size(42px);
+  }
+}

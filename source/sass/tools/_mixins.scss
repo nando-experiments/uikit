@@ -71,18 +71,29 @@
     color: shade($font, 5%);
   }
 
-  &:active {
-    transform: scale(.9);
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-
   &:disabled {
     &:hover {
       background-color: $background;
     }
+  }
+}
+
+@mixin navbar-variant($background: get-color(white), $font: get-color(font)) {
+  background-color: $background;
+
+  .nav-item {
+    a {
+      color: $font;
+    }
+
+    &:hover a,
+    &:active a,
+    &.is-active a {
+      background-color: rgba(darken($background, 15%), .4);
+    }
+  }
+
+  .navbar-brand {
+    color: $font;
   }
 }

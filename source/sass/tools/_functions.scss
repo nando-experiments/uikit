@@ -17,16 +17,18 @@
   @return $number;
 }
 
-@function to-em($px: strip-unit($inuit-font-size)) {
+@function to-em($px: $inuit-font-size) {
+  $px-value: strip-unit($px);
   $base-font-size: strip-unit($inuit-font-size);
-  $em-value: $px / $base-font-size;
+  $em-value: $px-value / $base-font-size;
 
   @return $em-value * 1em;
 }
 
-@function to-rem($px: strip-unit($inuit-font-size)) {
+@function to-rem($px: $inuit-font-size) {
+  $px-value: strip-unit($px);
   $base-font-size: strip-unit($inuit-font-size);
-  $rem-value: $px / $base-font-size;
+  $rem-value: $px-value / $base-font-size;
 
   @return $rem-value * 1rem;
 }

@@ -8,6 +8,7 @@ body {
   font-size: get-font-size(14);
   line-height: $base-line-height;
   font-weight: $base-font-weight;
+  background: get-color(silver);
 }
 
 h1,
@@ -19,6 +20,12 @@ h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
   font-weight: $bold-font-weight;
+
+  small {
+    font-size: 60%;
+    color: lighten(get-color(font), 15%);
+    font-weight: $base-font-weight;
+  }
 }
 
 h1,

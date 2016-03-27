@@ -17,6 +17,15 @@
   vertical-align: middle;
   white-space: nowrap;
 
+  &:active {
+    transform: scale(.9);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     cursor: not-allowed;
     opacity: .5;

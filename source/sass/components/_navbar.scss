@@ -1,0 +1,16 @@
+
+.navbar {
+  margin-bottom: get-spacing(base);
+  border-radius: $base-border-radius;
+  min-height: $navbar-height;
+  @include navbar-variant(get-color(white));
+  @include clearfix();
+}
+
+.navbar-primary {
+  @include navbar-variant(get-color(primary, base), get-color(white));
+}
+
+.navbar-secondary {
+  @include navbar-variant(get-color(secondary, base), get-color(white));
+}

@@ -1,0 +1,29 @@
+
+$nav-item-color: lighten(get-color(font), 10%);
+$nav-item-spacing: 0 get-spacing(small);
+
+$nav-item-active-color: get-color(font);
+$nav-item-active-bg: get-color(silver);
+
+.nav-item {
+  &,
+  a {
+    display: inline-block;
+  }
+
+  a {
+    padding: $nav-item-spacing;
+    color: $nav-item-color;
+    line-height: $navbar-height;
+    transition: color $base-duration $base-timing, background-color $base-duration $base-timing;
+  }
+
+  &:hover,
+  &:active,
+  &.is-active {
+    a {
+      color: $nav-item-active-color;
+      background-color: $nav-item-active-bg;
+    }
+  }
+}

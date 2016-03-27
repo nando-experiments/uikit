@@ -1,0 +1,16 @@
+
+$brand-color: lighten(get-color(font), 10%);
+
+.navbar-brand {
+  float: left;
+  line-height: $navbar-height;
+  font-size: get-font-size(24px);
+  padding: 0 get-spacing(small);
+  font-weight: $base-font-weight;
+  transition: opacity $base-duration $base-timing;
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+}
