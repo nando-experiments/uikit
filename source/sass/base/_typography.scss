@@ -7,6 +7,7 @@ body {
   font-family: $base-font-family;
   font-size: get-font-size(14);
   line-height: $base-line-height;
+  font-weight: $base-font-weight;
 }
 
 h1,
@@ -17,6 +18,7 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
+  font-weight: $bold-font-weight;
 }
 
 h1,

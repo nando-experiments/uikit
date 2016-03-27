@@ -60,3 +60,29 @@
     }
   }
 }
+
+@mixin button-variant($background: get-color(primary, base), $font: get-color(white)) {
+  color: $font;
+  background-color: $background;
+
+  &:hover,
+  &:focus {
+    background-color: shade($background, 20%);
+    color: shade($font, 5%);
+  }
+
+  &:active {
+    transform: scale(.9);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $background;
+    }
+  }
+}
