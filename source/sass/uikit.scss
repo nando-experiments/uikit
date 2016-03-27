@@ -1,2 +1,6 @@
 
-@import "bourbon/bourbon";
+@import "bourbon/bourbon"; // A simple and lightweight mixin library for Sass - http://bourbon.io/
+@import "neat/neat-helpers"; // A lightweight semantic grid framework for Sass and Bourbon - http://neat.bourbon.io/
+
+@import "settings/all";
+@import "base/all"; // Scaffold styles, variables and structure for Bourbon projects - http://bitters.bourbon.io/
