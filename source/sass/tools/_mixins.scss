@@ -1,0 +1,62 @@
+
+// scss-lint:disable DuplicateProperty
+@mixin font-size($px: $inuit-font-size) {
+  $px-value: strip-unit($px);
+  font-size: $px-value * 1px;
+  font-size: to-rem($px);
+}
+// scss-lint:enable DuplicateProperty
+
+@mixin media($query: $feature $value) {
+  @if length($query) == 1 {
+    @media screen and ($default-feature: nth($query, 1)) {
+      @content;
+    }
+  } @else {
+    $loop-to: length($query);
+    $media-query: 'screen and ';
+
+    @if length($query) % 2 != 0 {
+      $loop-to: $loop-to - 1;
+    }
+
+    $i: 1;
+    @while $i <= $loop-to {
+      $media-query: $media-query + '(' + nth($query, $i) + ': ' + nth($query, $i + 1) + ') ';
+
+      @if ($i + 1) != $loop-to {
+        $media-query: $media-query + 'and ';
+      }
+
+      $i: $i + 2;
+    }
+
+    @media #{$media-query} {
+      @content;
+    }
+  }
+}
+
+@mixin attribute($attr: class, $class: button) {
+  [#{$attr}^="#{$class}"] {
+    @content;
+  }
+}
+
+// Apply ‘attention’ styles in one go.
+@mixin attention($self: false) {
+  @if($self != false) {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}

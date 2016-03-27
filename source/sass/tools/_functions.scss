@@ -1,0 +1,40 @@
+
+@function get-color($color-name, $color-variant: null) {
+  // color variant is optional
+  @if ($color-variant != null) {
+    // map inception
+    @return map-get(map-get($palette, $color-name), $color-variant);
+  } @else {
+    @return map-get($palette, $color-name);
+  }
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function to-em($px: strip-unit($inuit-font-size)) {
+  $base-font-size: strip-unit($inuit-font-size);
+  $em-value: $px / $base-font-size;
+
+  @return $em-value * 1em;
+}
+
+@function to-rem($px: strip-unit($inuit-font-size)) {
+  $base-font-size: strip-unit($inuit-font-size);
+  $rem-value: $px / $base-font-size;
+
+  @return $rem-value * 1rem;
+}
+
+@function get-font-size($px: $inuit-font-size) {
+  @return to-rem($px);
+}
+
+@function get-spacing($spacing-name: base) {
+  @return map-get($spacings, $spacing-name);
+}

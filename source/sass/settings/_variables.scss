@@ -1,0 +1,81 @@
+// Typography
+$base-font-family: $helvetica;
+$heading-font-family: $base-font-family;
+$monospace-font-family: "courier new", monospace;
+
+// Font Sizes
+$inuit-font-size: 14px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-z-index: 0;
+
+// Spacings
+$spacings: (
+  mini   : 10px,
+  small  : 15px,
+  medium : 20px,
+  base   : 30px,
+  big    : 40px,
+  large  : 60px,
+);
+
+$palette: (
+  white: #fff,
+  black: #000,
+  silver: #f9f2e7,
+  font: #52575b,
+  border: #eaeaea,
+  code: #ededed,
+  primary: (
+    base: #5484b3,
+    light: lighten(#5484b3, 15%),
+    dark: darken(#5484b3, 15%),
+    transp: transparentize(#5484b3, .5)
+  ),
+  secondary: (
+    base: #52575b,
+    light: lighten(#52575b, 15%),
+    dark: darken(#52575b, 15%),
+    transp: transparentize(#52575b, .5)
+  ),
+  success: (
+    base: #75ce4a,
+    light: lighten(#75ce4a, 25%),
+    dark: darken(#75ce4a, 10%),
+    transp: transparentize(#75ce4a, .5)
+  ),
+  info: (
+    base: #65c0de,
+    light: lighten(#65c0de, 25%),
+    dark: darken(#65c0de, 10%),
+    transp: transparentize(#65c0de, .5)
+  ),
+  warning: (
+    base: #febc5d,
+    light: lighten(#febc5d, 25%),
+    dark: darken(#febc5d, 10%),
+    transp: transparentize(#febc5d, .5)
+  ),
+  danger: (
+    base: #ff3b47,
+    light: lighten(#ff3b47, 25%),
+    dark: darken(#ff3b47, 10%),
+    transp: transparentize(#ff3b47, .5)
+  ),
+  social: (
+    facebook: #3b5998,
+    twitter: #64a8f2,
+    gplus: #e85c62,
+    linkedin: #0077b5,
+    github: #323131,
+  )
+);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
