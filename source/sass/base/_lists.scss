@@ -6,11 +6,11 @@ ol {
 }
 
 dl {
-  margin-bottom: $small-spacing;
+  margin-bottom: get-spacing(small);
 
   dt {
     font-weight: 600;
-    margin-top: $small-spacing;
+    margin-top: get-spacing(small);
   }
 
   dd {

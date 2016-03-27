@@ -1,7 +1,11 @@
+html {
+  font-size: $inuit-font-size;
+}
+
 body {
-  color: $base-font-color;
+  color: get-color(font);
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: get-font-size(14);
   line-height: $base-line-height;
 }
 
@@ -12,37 +16,76 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-  margin: 0 0 $small-spacing;
+  margin: get-spacing(small) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: get-font-size(34);
+}
+
+h2 {
+  font-size: get-font-size(30);
+}
+
+h3 {
+  font-size: get-font-size(28);
+}
+
+h4 {
+  font-size: get-font-size(24);
+}
+
+h5 {
+  font-size: get-font-size(20);
+}
+
+h6 {
+  font-size: get-font-size(16);
 }
 
 a {
-  color: $action-color;
+  color: get-color(primary, base);
   text-decoration: none;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: get-color(primary, dark);
   }
 }
 
 hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
+  border: 0 none;
+  border-bottom: 1px solid get-color(border);
+  margin: get-spacing(base) 0;
 }
 
 img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+pre,
+code {
+  font-family: $monospace-font-family;
 }

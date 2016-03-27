@@ -1,33 +1,9 @@
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  appearance: none;
-  background-color: #1565c0;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1.5em;
-  text-decoration: none;
-  transition: background-color 150ms ease;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+html {
+  box-sizing: border-box;
 }
-button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: #11519a;
-  color: #fff;
-}
-button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-  background-color: #1565c0;
+
+*, *::after, *::before {
+  box-sizing: inherit;
 }
 
 fieldset {
@@ -39,45 +15,45 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: 7.5px;
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: 7.5px;
 }
 
 input,
 select {
   display: block;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple] {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eaeaea;
   border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
   box-sizing: border-box;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 10px;
   transition: border-color 150ms ease;
   width: 100%;
 }
 input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
 select[multiple]:hover {
-  border-color: #b1b1b1;
+  border-color: #bbbbbb;
 }
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select[multiple]:focus {
-  border-color: #1565c0;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  border-color: #5484b3;
+  box-shadow: none;
   outline: none;
 }
 input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
@@ -87,7 +63,7 @@ select[multiple]:disabled {
 }
 input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
 select[multiple]:disabled:hover {
-  border: 1px solid #ddd;
+  border: 1px solid #eaeaea;
 }
 
 textarea {
@@ -101,16 +77,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: 0.375em;
+  margin-right: 7.5px;
 }
 
 [type="file"] {
-  margin-bottom: 0.75em;
+  margin-bottom: 15px;
   width: 100%;
 }
 
 select {
-  margin-bottom: 1.5em;
+  margin-bottom: 30px;
   max-width: 100%;
   width: auto;
 }
@@ -123,11 +99,11 @@ ol {
 }
 
 dl {
-  margin-bottom: 0.75em;
+  margin-bottom: 15px;
 }
 dl dt {
   font-weight: 600;
-  margin-top: 0.75em;
+  margin-top: 15px;
 }
 dl dd {
   margin: 0;
@@ -135,21 +111,21 @@ dl dd {
 
 table {
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 15px 0;
   table-layout: fixed;
   width: 100%;
 }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #b0b0b0;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: 15px 0;
   text-align: left;
 }
 
 td {
-  border-bottom: 1px solid #ddd;
-  padding: 0.75em 0;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0;
 }
 
 tr,
@@ -158,10 +134,14 @@ th {
   vertical-align: middle;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
-  color: #333;
+  color: #52575b;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -172,36 +152,128 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-  margin: 0 0 0.75em;
+  margin: 15px 0;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child {
+  margin-top: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.42857rem;
+}
+
+h2 {
+  font-size: 2.14286rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.71429rem;
+}
+
+h5 {
+  font-size: 1.42857rem;
+}
+
+h6 {
+  font-size: 1.14286rem;
 }
 
 a {
-  color: #1565c0;
+  color: #5484b3;
   text-decoration: none;
   transition: color 150ms ease;
 }
 a:active, a:focus, a:hover {
-  color: #104c90;
+  color: #395e81;
 }
 
 hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0;
+  border: 0 none;
+  border-bottom: 1px solid #eaeaea;
+  margin: 30px 0;
 }
 
 img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+pre,
+code {
+  font-family: "courier new", monospace;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #5484b3;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #436a8f;
+  color: #fff;
+}
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #5484b3;
 }
 
 /*# sourceMappingURL=uikit.css.map */

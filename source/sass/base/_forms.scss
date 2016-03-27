@@ -7,53 +7,53 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: get-spacing(small) / 2;
   padding: 0;
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: get-spacing(small) / 2;
 }
 
 input,
 select {
   display: block;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: get-font-size(14);
 }
 
 #{$all-text-inputs},
 select[multiple] {
-  background-color: $base-background-color;
-  border: $base-border;
+  background-color: get-color(white);
+  border: 1px solid get-color(border);
   border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
+  box-shadow: none;
   box-sizing: border-box;
   font-family: $base-font-family;
-  font-size: $base-font-size;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  font-size: get-font-size(14);
+  margin-bottom: get-spacing(small);
+  padding: get-spacing(base) / 3;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: shade(get-color(border), 20%);
   }
 
   &:focus {
-    border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: get-color(primary, base);
+    box-shadow: none;
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: shade(get-color(white), 5%);
     cursor: not-allowed;
 
     &:hover {
-      border: $base-border;
+      border: 1px solid get-color(border);
     }
   }
 }
@@ -69,16 +69,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: get-spacing(small) / 2;
 }
 
 [type="file"] {
-  margin-bottom: $small-spacing;
+  margin-bottom: get-spacing(small);
   width: 100%;
 }
 
 select {
-  margin-bottom: $base-spacing;
+  margin-bottom: get-spacing(base);
   max-width: 100%;
   width: auto;
 }
