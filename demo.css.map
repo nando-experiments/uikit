@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,IAAK;EACH,UAAU,EAAE,UAAU;;;AAItB,sBAEU;EACR,UAAU,EAAE,OAAO;;;ACJzB,OAAQ;EACN,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,MAAmB;EAC5B,aAAa,ECiBJ,IAAI;EDhBb,aAAa,EAAE,iBAA2B;;AAE1C,UAAG;EACD,SAAS,EAAE,IAAmB",
+"sources": ["../source/sass/neat/grid/_box-sizing.scss","../source/sass/demo.scss","../source/sass/settings/_variables.scss"],
+"names": [],
+"file": "demo.css"
+}
